@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useFetching } from '../hooks/useFetching';
-import PostsTable from '../components/PostsTable';
-import PostService from '../api/PostService';
-import PostQuery from '../components/PostQuery';
-import COLUMNS from '../UI/columns'
+import COLUMNS from '../../UI/columns';
+import PostService from '../../api/PostService';
+import PostQuery from '../../components/PostQuery';
+import PostsTable from '../../components/PostsTable';
+import { useFetching } from '../../hooks/useFetching';
+import classes from './TablePage.module.css';
 
 const TablePage = () => {
   const [posts, setPosts] = useState([]);
@@ -30,7 +31,7 @@ const TablePage = () => {
   }, [searchQuery, posts]);
 
   return (
-    <div className='App'>
+    <div className={classes.container}>
       <PostQuery searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {postError
         && <h1>Произошла ошибка ${postError}</h1>

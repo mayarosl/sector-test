@@ -1,0 +1,16 @@
+.ant-input-group {
+  background: yellowgreen;
+}
+
+.ant-input-search-button {
+  background: yellow;
+  /* background: transparent; */
+  
+}
+
+.ant-input-search 
+.ant-input-group 
+.ant-input-group-addon:last-child 
+.ant-input-search-button:not(.ant-btn-primary) {
+  background-color: blueviolet;
+}
