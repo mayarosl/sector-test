@@ -26,7 +26,7 @@ const PostsTable = ({ posts, columns }) => {
         />
         :
         <div>
-          <h2>Посты не найдены</h2>
+          <h2 className='info-line'>Посты не найдены</h2>
         </div>
       }
     </div>
