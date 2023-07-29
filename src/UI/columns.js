@@ -1,19 +1,18 @@
 import { Sorter } from "../utils/sorter";
-import toggleIcon from "../utils/toggleIcon";
+import toggleSortIcon from "../utils/toggleSortIcon";
 
 const COLUMNS = [
   {
     key: 'id',
     title: ({ sortColumns }) => {
       const sortedColumn = sortColumns?.find(({ column }) => column.key === "id");
-      return (toggleIcon('ID', sortedColumn))
+      return (toggleSortIcon('ID', sortedColumn))
     },
     dataIndex: 'id',
     sorter: {
       compare: Sorter.ById,
       multiple: 1
     },
-    width: 115,
     align: 'center'
   },
 
@@ -21,7 +20,7 @@ const COLUMNS = [
     key: 'title',
     title: ({ sortColumns }) => {
       const sortedColumn = sortColumns?.find(({ column }) => column.key === "title");
-      return (toggleIcon('Заголовок', sortedColumn))
+      return (toggleSortIcon('Заголовок', sortedColumn))
     },
     dataIndex: 'title',
     // align: 'center',
@@ -29,13 +28,12 @@ const COLUMNS = [
       compare: Sorter.ByTitle,
       multiple: 1
     },
-    width: 560
   },
   {
     key: 'body',
     title: ({ sortColumns }) => {
       const sortedColumn = sortColumns?.find(({ column }) => column.key === "body");
-      return (toggleIcon('Описание', sortedColumn))
+      return (toggleSortIcon('Описание', sortedColumn))
     },
     dataIndex: 'body',
     // align: 'center',
@@ -43,7 +41,6 @@ const COLUMNS = [
       compare: Sorter.ByBody,
       multiple: 1
     },
-    width: 500
   },
 ];
 
