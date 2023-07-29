@@ -34,11 +34,11 @@ const TablePage = () => {
     <div className='table-container'>
       <PostQuery searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {postError
-        && <h2>Произошла ошибка ${postError}</h2>
+        && <h2 className='info-line'>Произошла ошибка ${postError}</h2>
       }
       {isPostsLoading
         ?
-        <h2>Посты загружаются...</h2>
+        <h2 className='info-line'>Посты загружаются...</h2>
         :
         <PostsTable
           posts={searchedPosts}
