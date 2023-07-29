@@ -1,1 +1,1 @@
-Тестовое задание: sector-test-two.vercel.app
+[Посмотреть](sector-test-two.vercel.app)
