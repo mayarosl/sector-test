@@ -1,9 +1,6 @@
-/* @import '../../styles/global.css'; */
-
 .searchQuery-container {
   margin-top: 20px;
   margin-bottom: 16px;
-  max-width: 631px;
 }
 
 .ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
@@ -54,3 +51,9 @@
 .ant-input-search .ant-input-group .ant-input-group-addon:last-child {
   padding: 0 20px;
 }
+
+ @media (min-width: 630px) {
+  .searchQuery-container {
+    max-width: 630px;
+  }
+ }

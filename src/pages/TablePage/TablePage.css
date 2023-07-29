@@ -1,7 +1,19 @@
-@import '../../styles/global.css';
-
 .table-container {
-  max-width: 1232px;
-  padding: 20px;
+  /* padding: 0 20px; */
   background-color: var(--light-background-color);
+}
+
+@media (max-width: 375px) { 
+.table-container {
+  min-width: 375px;
+  padding: 0 10px;
+  /* background-color: rgba(137, 43, 226, 0.427); */
+}
+ }
+
+ @media (min-width: 1232px) {
+  .table-container {
+    max-width: 1077px;
+    /* background-color: rgba(127, 255, 212, 0.559); */
+  }
 }

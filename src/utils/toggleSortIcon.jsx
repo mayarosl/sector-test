@@ -2,7 +2,7 @@ import React from 'react';
 import { UpOutlined, DownOutlined } from '@ant-design/icons';
 
 
-const toggleIcon = (colName, sortedColumn) => {
+const toggleSortIcon = (colName, sortedColumn) => {
   return (
     <div className="sort-container">
       {colName}
@@ -17,4 +17,4 @@ const toggleIcon = (colName, sortedColumn) => {
   );
 };
 
-export default toggleIcon;
+export default toggleSortIcon;
