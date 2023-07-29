@@ -1,0 +1,7 @@
+@import '../../styles/global.css';
+
+.table-container {
+  max-width: 1232px;
+  padding: 20px;
+  background-color: var(--light-background-color);
+}

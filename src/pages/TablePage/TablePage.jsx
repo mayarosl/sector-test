@@ -4,7 +4,7 @@ import PostService from '../../api/PostService';
 import PostQuery from '../../components/PostQuery';
 import PostsTable from '../../components/PostsTable';
 import { useFetching } from '../../hooks/useFetching';
-import classes from './TablePage.module.css';
+import './TablePage.css';
 
 const TablePage = () => {
   const [posts, setPosts] = useState([]);
@@ -31,14 +31,14 @@ const TablePage = () => {
   }, [searchQuery, posts]);
 
   return (
-    <div className={classes.container}>
+    <div className='table-container'>
       <PostQuery searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {postError
-        && <h1>Произошла ошибка ${postError}</h1>
+        && <h2>Произошла ошибка ${postError}</h2>
       }
       {isPostsLoading
         ?
-        <h1>Посты загружаются...</h1>
+        <h2>Посты загружаются...</h2>
         :
         <PostsTable
           posts={searchedPosts}

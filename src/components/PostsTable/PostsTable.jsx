@@ -1,4 +1,6 @@
 import { Table } from 'antd';
+import TextPagination from '../../utils/TextPagination';
+import './PostsTable.css';
 
 const PostsTable = ({ posts, columns }) => {
 
@@ -7,13 +9,24 @@ const PostsTable = ({ posts, columns }) => {
       {posts.length
         ?
         <Table
+          className='posts-table'
           columns={columns}
           dataSource={posts}
           rowKey='id'
+          pagination={{
+            itemRender: TextPagination,
+            position: ['bottomCenter'],
+            showSizeChanger: false
+          }}
+          locale={{
+            triggerDesc: 'По убыванию',
+            triggerAsc: 'По возрастанию',
+            cancelSort: 'Не упорядочивать'
+          }}
         />
         :
         <div>
-          <h1>Посты не найдены</h1>
+          <h2>Посты не найдены</h2>
         </div>
       }
     </div>
