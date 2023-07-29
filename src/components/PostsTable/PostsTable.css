@@ -169,6 +169,5 @@ MEDIA
 @media (max-width: 460px) {
   .sort-container {
     gap: 10px;
-    justify-content: left;
   }
 }
