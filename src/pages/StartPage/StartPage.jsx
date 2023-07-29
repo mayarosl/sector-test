@@ -1,14 +1,15 @@
 import { useNavigate } from 'react-router-dom';
-import classes from './StartPage.module.css'
+import './StartPage.css';
 
 const StartPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className={classes.container}>
+    <div className='container'>
       <button
-        className={classes.btn}
-        onClick={() => navigate('/table')}>
+        className='btn'
+        onClick={() => navigate('/table')}
+      >
         К таблице
       </button>
     </div>
