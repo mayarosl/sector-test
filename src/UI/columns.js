@@ -23,7 +23,6 @@ const COLUMNS = [
       return (toggleSortIcon('Заголовок', sortedColumn))
     },
     dataIndex: 'title',
-    // align: 'center',
     sorter: {
       compare: Sorter.ByTitle,
       multiple: 1
@@ -36,7 +35,6 @@ const COLUMNS = [
       return (toggleSortIcon('Описание', sortedColumn))
     },
     dataIndex: 'body',
-    // align: 'center',
     sorter: {
       compare: Sorter.ByBody,
       multiple: 1

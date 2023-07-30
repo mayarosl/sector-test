@@ -1,4 +1,3 @@
-import React from 'react';
 import { UpOutlined, DownOutlined } from '@ant-design/icons';
 
 
@@ -7,12 +6,12 @@ const toggleSortIcon = (colName, sortedColumn) => {
     <div className="sort-container">
       {colName}
       {sortedColumn ? (
-            sortedColumn.order === "ascend" ? (
-              <UpOutlined />
-            ) : (
-              <DownOutlined />
-            )
-          ) : <DownOutlined />}
+        sortedColumn.order === "ascend" ? (
+          <UpOutlined />
+        ) : (
+          <DownOutlined />
+        )
+      ) : <DownOutlined />}
     </div>
   );
 };

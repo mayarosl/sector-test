@@ -170,4 +170,15 @@ MEDIA
   .sort-container {
     gap: 10px;
   }
+  .ant-table-wrapper .ant-table-pagination-center li {
+    font-size: 10px;
+  }
+  .ant-table-wrapper .ant-table-pagination-center li:first-child {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .ant-table-wrapper .ant-table-pagination-center li:last-child {
+    margin-right: 10px;
+    font-size: 12px;
+  }
 }

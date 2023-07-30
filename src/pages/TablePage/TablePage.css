@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   height: 33vh;
-  }
+}
 
 @media (max-width: 375px) {
   .table-container {

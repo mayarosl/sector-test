@@ -1,1 +1,1 @@
-export {default} from './PostQuery';
+export { default } from './PostQuery';
