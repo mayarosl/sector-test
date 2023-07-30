@@ -6,7 +6,7 @@
 
 ### ОПИСАНИЕ API:
 
-Данных: <https://jsonplaceholder.typicode.com/posts>
+Данные: <https://jsonplaceholder.typicode.com/posts>
 
 ### ОПИСАНИЕ ПРИЛОЖЕНИЯ:
 
