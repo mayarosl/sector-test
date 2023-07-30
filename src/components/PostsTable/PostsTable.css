@@ -13,10 +13,6 @@
   gap: 40px;
 }
 
-.sort-container:first-child {
-  gap: 10px;
-}
-
 .ant-table-wrapper .ant-table-thead tr th {
   background: var(--primary-background-color);
   color: var(--title-color);
